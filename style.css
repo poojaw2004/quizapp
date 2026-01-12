@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #a1f3e4, #afbdf9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 135vh;
+}
+
+#quiz-container {
+    background: rgb(248, 248, 250);
+    width: 100%;
+    max-width: 900px;
+    border-radius: 2rem;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    padding: 2rem;
+    text-align: center;
+    animation: fadeIn 0.8s ease;
+    height: 70%;
+    max-height: 900px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-style:italic;
+}
+
+h2{
+    margin-bottom: 2rem;
+}
+
+p, label {
+    font-size: 1.5rem;
+    color: black;
+    font-style: normal;
+}
+
+input[type="text"], input[type="submit"] {
+    margin-top: 2rem;
+    padding: 0.8rem 2rem;
+    border-radius: 9px;
+    border: 2px solid #888;
+    outline: none;
+    transition: all 0.3s;
+    width: 30%;
+}
+
+input[type="text"]:focus {
+    border-color: #bfa7d9;
+    box-shadow: 0 0 10px rgba(106, 17, 203, 0.3);
+}
+
+input[type="submit"] {
+    background: #560aa8;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #2c78fa;
+}
+
+button {
+    background: #0a19ee;
+    color: black;
+    padding: 25px 35px;
+    margin: 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+    font-size: 1.5rem;
+    font-style: italic;
+    border-color: black 2rem;
+}
+
+button:hover {
+    background: #6a11cb;
+    transform: scale(1.05);
+}
+
+.option-btn {
+    display: block;
+    width: 90%;
+    margin: 8px auto;
+    background: #f1f1f1;
+    color: #333;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.option-btn:hover {
+    background: #e0e0ff;
+    transform: scale(1.02);
+}
+
+
+#timer {
+    font-size: 16px;
+    font-weight: bold;
+    color: #e63946;
+    margin-bottom: 15px;
+}
+
+#score-display {
+    font-size: 2rem;
+    color:black#444;
+    margin-top: 10px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
